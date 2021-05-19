@@ -10,10 +10,7 @@ const userSchema = new mongoose.Schema({
 		type: String,
 		required: true,
 	},
-	phone: {
-		type: Number,
-		required: true,
-	},
+
 	password: {
 		type: String,
 		required: true,
@@ -22,14 +19,14 @@ const userSchema = new mongoose.Schema({
 		type: String,
 		required: true,
 	},
-	tokens: [
-		{
-			token: {
-				type: String,
-				required: true,
-			},
-		},
-	],
+	// tokens: [
+	// 	{
+	// 		token: {
+	// 			type: String,
+	// 			required: true,
+	// 		},
+	// 	},
+	// ],
 });
 
 userSchema.methods.generateAuthToken = async function () {

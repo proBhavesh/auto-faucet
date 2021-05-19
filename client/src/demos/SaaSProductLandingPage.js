@@ -3,6 +3,8 @@ import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Hero from "components/hero/TwoColumnWithInput.js";
+//
+import Signup from "components/signer/Signup.js";
 import Features from "components/features/ThreeColWithSideImage.js";
 import MainFeature from "components/features/TwoColWithButton.js";
 import MainFeature2 from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
@@ -13,7 +15,7 @@ import FAQ from "components/faqs/SingleCol.js";
 import GetStarted from "components/cta/GetStarted";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import heroScreenshotImageSrc from "images/hero-screenshot-1.png";
-import macHeroScreenshotImageSrc from "images/hero-screenshot-2.png";
+import macHeroScreenshotImageSrc from "images/hero-screenshot-4.svg";
 import prototypeIllustrationImageSrc from "images/prototype-illustration.svg";
 import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
@@ -33,13 +35,13 @@ export default () => {
           </>
         }
       />
-   {/*    <MainFeature
+      {/*    <MainFeature
         subheading={<Subheading>Quality Work</Subheading>}
         imageSrc={heroScreenshotImageSrc}
         imageBorder={true}
         imageDecoratorBlob={true}
       />*/}
-      {/*  <FeatureWithSteps
+      <FeatureWithSteps
         subheading={<Subheading>STEPS</Subheading>}
         heading={
           <>
@@ -50,7 +52,8 @@ export default () => {
         imageSrc={macHeroScreenshotImageSrc}
         imageDecoratorBlob={true}
         decoratorBlobCss={tw`xl:w-40 xl:h-40 opacity-15 -translate-x-1/2 left-1/2`}
-      />*/}
+      />
+      <Signup />
       {/* <MainFeature2
         subheading={<Subheading>VALUES</Subheading>}
         heading={
@@ -75,7 +78,7 @@ export default () => {
           }
         ]}
       />*/}
-      <Pricing
+      {/*  <Pricing
         subheading={<Subheading>Pricing</Subheading>}
         heading={
           <>
@@ -111,7 +114,7 @@ export default () => {
           //   features: ["90 Templates", "27 Landing Pages", "37 Internal Pages", "Personal Assistance"]
           // }
         ]}
-      />
+      />*/}
       {/*<Testimonial
         subheading={<Subheading>Testimonials</Subheading>}
         heading={
@@ -142,7 +145,7 @@ export default () => {
           }
         ]}
       />*/}
-      <FAQ
+    {/*  <FAQ
         subheading={<Subheading>FAQS</Subheading>}
         heading={
           <>
@@ -183,7 +186,7 @@ export default () => {
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
           },
         ]}
-      />
+      />*/}
       <GetStarted />
       <Footer />
     </AnimationRevealPage>

@@ -22,9 +22,9 @@ export default () => {
     <AnimationRevealPage disabled>
       <Header />
       <MainFeature1
-        subheading={<Subheading>About Treact</Subheading>}
-        heading="Xplicit Academy"
-        description="Xplicit Academy is a web based learning platform that assists anybody with learnig basic computer skills, internet basics,email and great technology course to accomplish distinctive and knowledgeable goals."
+        subheading={<Subheading>About Autofaucet</Subheading>}
+        heading="Final Autofaucet"
+        description="This Site Allows you to Claim many different types of cryptocurrencies in a single tab! You just have to register, enter your crypto addresses and choose the cryptocurrencies you want to claim!"
         buttonRounded={false}
         // primaryButtonText="See Portfolio"
         imageSrc="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
@@ -60,7 +60,7 @@ export default () => {
         ]}
         linkText=""
       />*/}
-     {/* <TeamCardGrid 
+      {/* <TeamCardGrid 
         subheading={<Subheading>Our Team</Subheading>}
       />*/}
       <Footer />

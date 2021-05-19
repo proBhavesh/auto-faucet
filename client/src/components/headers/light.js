@@ -82,13 +82,7 @@ export default ({
       <NavLink>
         <NavBarLink to="/aboutus">About Us</NavBarLink>{" "}
       </NavLink>
-      <NavLink >
-        <NavBarLink to="/pricing">Pricing</NavBarLink>
-      </NavLink>
-      <NavLink >
-        <NavBarLink to="/blog">Courses</NavBarLink>
-      </NavLink>
-      <NavLink >
+      <NavLink>
         <NavBarLink to="/contactus">Contact</NavBarLink>
       </NavLink>
       <NavLink tw="lg:ml-12!">

@@ -112,12 +112,6 @@ export default function App() {
 	return (
 		<Router>
 			<Switch>
-				<Route path="/components/:type/:subtype/:name">
-					<ComponentRenderer />
-				</Route>
-				<Route path="/components/:type/:name">
-					<ComponentRenderer />
-				</Route>
 				<Route path="/" exact>
 					<SaaSProductLandingPage />
 				</Route>
@@ -127,17 +121,12 @@ export default function App() {
 				<Route path="/signup" exact>
 					<SignupPage />
 				</Route>
-				<Route path="/pricing" exact>
-					<PricingPage />
-				</Route>
+
 				<Route path="/aboutus" exact>
 					<AboutUsPage />
 				</Route>
 				<Route path="/contactus" exact>
 					<ContactUsPage />
-				</Route>
-				<Route path="/blog" exact>
-					<BlogIndexPage />
 				</Route>
 			</Switch>
 		</Router>

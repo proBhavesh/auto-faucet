@@ -1,3 +1,6 @@
+const User = require("../model/userSchema");
+require("../db/connect");
+
 {
 	/*<-------------------------HOME HANDLE ------------------------------------>*/
 }
@@ -36,8 +39,35 @@ const paymentHandle = (req, res) => {
 
 // <------------------------- SIGNUP HANDLE ------------------------------------>
 
-const signupHandle = (req, res) => {
-	res.send("This is signup handle");
+const signupHandle = async (req, res) => {
+	const { name, email, password, cpassword } = req.body;
+	if (!name || !email || !password || !cpassword) {
+		return res.status(422).json({ error: "Some fields are empty" });
+	}
+
+	try {
+		const userExist = await User.findOne({ email: email });
+
+		if (userExist) {
+			return res.status(422).json({ error: "Email Exists" });
+		} else if (password != cpassword) {
+			return res.status(422).json({ error: "passwords don't match" });
+		} else {
+			const user = new User({
+				name,
+				email,
+				password,
+				cpassword,
+			});
+
+			await user.save();
+			res.status(201).json({
+				message: "user registered successfully",
+			});
+		}
+	} catch (err) {
+		console.log(err);
+	}
 };
 
 // <-------------------------LOGIN HANDLE ------------------------------------>

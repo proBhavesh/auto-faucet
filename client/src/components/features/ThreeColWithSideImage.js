@@ -65,7 +65,7 @@ export default ({
   cards = null,
   heading = "Amazing Features",
   subheading = "Features",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  description = "We have amazing features with support for 50+ coins",
 }) => {
   /*
    * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component) or you can directly pass this using the cards prop:
@@ -84,31 +84,31 @@ export default ({
     },
     {
       imageSrc: SupportIconImage,
-      title: "24/7 Support",
+      title: "51 Available Coins",
       description:
         "We strictly only deal with vendors that provide top notch security.",
     },
     {
       imageSrc: CustomizeIconImage,
-      title: "Customizable",
+      title: "Multiple Payments Methods",
       description:
         "We strictly only deal with vendors that provide top notch security.",
     },
-     {
+    {
       imageSrc: FastIconImage,
-      title: "Customizable",
+      title: "Highest Reward",
       description:
         "We strictly only deal with vendors that provide top notch security.",
     },
-     {
+    {
       imageSrc: ReliableIconImage,
-      title: "Customizable",
+      title: "Offers and Shorteners",
       description:
         "We strictly only deal with vendors that provide top notch security.",
     },
-     {
+    {
       imageSrc: SimpleIconImage,
-      title: "Customizable",
+      title: "Referral Up to 20%",
       description:
         "We strictly only deal with vendors that provide top notch security.",
     },
@@ -131,10 +131,10 @@ export default ({
               </span>
               <span className="textContainer">
                 <span className="title">{card.title || "Fully Secure"}</span>
-                <p className="description">
+                {/*<p className="description">
                   {card.description ||
                     "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud."}
-                </p>
+                </p>*/}
               </span>
             </Card>
           </Column>
